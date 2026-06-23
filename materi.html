@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Materi Jaringan LAN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 min-h-screen flex flex-col font-sans">
+
+    <header class="border-b border-gray-100 py-6">
+        <div class="max-w-4xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-sm font-medium text-gray-500 hover:text-purple-600">&larr; Beranda</a>
+            <span class="text-sm bg-purple-50 text-purple-700 px-3 py-1 rounded-full font-medium">Materi Pelajaran</span>
+        </div>
+    </header>
+
+    <div class="max-w-4xl mx-auto px-6 py-10 flex-grow w-full grid grid-cols-1 md:grid-cols-4 gap-8">
+        
+        <aside class="md:col-span-1">
+            <nav class="space-y-1 flex md:flex-col overflow-x-auto md:overflow-visible pb-3 md:pb-0" id="materi-nav">
+                <button onclick="switchTab('pengertian')" id="btn-pengertian" class="tab-btn w-full text-left px-3 py-2 text-sm font-medium rounded-lg text-purple-700 bg-purple-50 whitespace-nowrap">1. Pengertian</button>
+                <button onclick="switchTab('fungsi')" id="btn-fungsi" class="tab-btn w-full text-left px-3 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50 whitespace-nowrap">2. Fungsi LAN</button>
+                <button onclick="switchTab('komponen')" id="btn-komponen" class="tab-btn w-full text-left px-3 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50 whitespace-nowrap">3. Komponen</button>
+                <button onclick="switchTab('kelebihan')" id="btn-kelebihan" class="tab-btn w-full text-left px-3 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50 whitespace-nowrap">4. Kelebihan & Kekurangan</button>
+                <button onclick="switchTab('prinsip')" id="btn-prinsip" class="tab-btn w-full text-left px-3 py-2 text-sm font-medium rounded-lg text-gray-600 hover:bg-gray-50 whitespace-nowrap">5. Prinsip Kerja</button>
+            </nav>
+        </aside>
+
+        <main class="md:col-span-3 bg-white border border-gray-100 rounded-2xl p-6 md:p-8 shadow-sm">
+            
+            <div id="content-pengertian" class="materi-content block">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Pengertian LAN</h3>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    <span class="font-semibold text-purple-700">LAN (Local Area Network):</span> Jaringan komputer yang menghubungkan perangkat dalam area kecil seperti ruangan, gedung, atau kampus. [cite: 148]
+                </p>
+                <div class="bg-gray-50 rounded-xl p-4 border-l-4 border-purple-500">
+                    <h4 class="font-bold text-gray-900 mb-1">Ciri Utama LAN:</h4>
+                    <ul class="list-disc pl-5 text-gray-600 text-sm space-y-1">
+                        <li>Cakupan terbatas (beberapa meter hingga &plusmn;1 km). [cite: 149]</li>
+                        <li>Kecepatan transfer data cenderung tinggi. [cite: 149]</li>
+                        <li>Pengelolaan jaringan tergolong mudah. [cite: 149]</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="content-fungsi" class="materi-content hidden">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Fungsi Utama LAN</h3>
+                <ul class="space-y-3">
+                    <li class="border-b border-gray-50 pb-2">
+                        <strong class="text-gray-900">Berbagi Sumber Daya (Resource Sharing):</strong> Memungkinkan penggunaan printer, scanner, file, dan aplikasi internal secara bersamaan. [cite: 154]
+                    </li>
+                    <li class="border-b border-gray-50 pb-2">
+                        <strong class="text-gray-900">Komunikasi Antar Perangkat:</strong> Memfasilitasi chatting lokal dan kendali jarak jauh (remote) komputer dalam jaringan. [cite: 156]
+                    </li>
+                    <li class="border-b border-gray-50 pb-2">
+                        <strong class="text-gray-900">Manajemen Data Terpusat:</strong> Seluruh data penting disimpan di server pusat sehingga dapat diakses oleh semua komputer klien yang berhak. [cite: 157, 158]
+                    </li>
+                    <li>
+                        <strong class="text-gray-900">Efisiensi Kerja:</strong> Mempercepat proses kolaborasi tim dan meminimalkan penggunaan media penyimpanan eksternal (seperti flashdisk). [cite: 159, 160]
+                    </li>
+                </ul>
+            </div>
+
+            <div id="content-komponen" class="materi-content hidden">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Komponen Jaringan LAN</h3>
+                <div class="space-y-4">
+                    <div>
+                        <h4 class="font-bold text-purple-700 text-sm uppercase tracking-wider mb-2">1. Perangkat Keras (Hardware)</h4>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-1 text-sm">
+                            <li><strong>Komputer/Laptop:</strong> Perangkat pengguna. [cite: 165]</li>
+                            <li><strong>Switch atau Hub:</strong> Berperan sebagai penghubung fisik antar perangkat. [cite: 166]</li>
+                            <li><strong>Router:</strong> Berfungsi menghubungkan jaringan lokal LAN ke internet luar. [cite: 167]</li>
+                            <li><strong>Kabel Ethernet:</strong> Media kabel seperti UTP atau fiber optik. [cite: 168]</li>
+                            <li><strong>NIC (Network Interface Card):</strong> Kartu adapter jaringan pada PC. [cite: 169]</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-purple-700 text-sm uppercase tracking-wider mb-2">2. Perangkat Lunak (Software)</h4>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-1 text-sm">
+                            <li>Sistem operasi yang mendukung jaringan (Windows, Linux, macOS). [cite: 171]</li>
+                            <li>Protokol komunikasi jaringan (TCP/IP). [cite: 172]</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-purple-700 text-sm uppercase tracking-wider mb-2">3. Media Transmisi</h4>
+                        <ul class="list-disc pl-5 text-gray-700 space-y-1 text-sm">
+                            <li><strong>Kabel (Wired LAN):</strong> Menggunakan fisik kabel ethernet. [cite: 174]</li>
+                            <li><strong>Wi-Fi (Wireless LAN/WLAN):</strong> Menggunakan gelombang radio tanpa kabel. [cite: 175]</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-kelebihan" class="materi-content hidden">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Kelebihan & Kekurangan</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="bg-green-50 p-4 rounded-xl">
+                        <h4 class="font-bold text-green-800 mb-2">Kelebihan LAN:</h4>
+                        <ul class="list-disc pl-5 text-sm text-green-900 space-y-1">
+                            <li>Kecepatan transfer data sangat tinggi. [cite: 180]</li>
+                            <li>Biaya relatif murah dibanding WAN. [cite: 181]</li>
+                            <li>Bisa berbagi resource secara langsung. [cite: 182]</li>
+                            <li>Tidak bergantung pada operator telekomunikasi luar. [cite: 183]</li>
+                        </ul>
+                    </div>
+                    <div class="bg-red-50 p-4 rounded-xl">
+                        <h4 class="font-bold text-red-800 mb-2">Kekurangan LAN:</h4>
+                        <ul class="list-disc pl-5 text-sm text-red-900 space-y-1">
+                            <li>Keamanan rentan jika tidak diproteksi dengan baik. [cite: 186]</li>
+                            <li>Jika server pusat down, seluruh jaringan ikut terganggu. [cite: 187]</li>
+                            <li>Instalasi awal cukup mahal (perlu switch, router, kabel). [cite: 187]</li>
+                            <li>Jangkauan area sangat terbatas. [cite: 188]</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="content-prinsip" class="materi-content hidden">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4">Prinsip Kerja LAN</h3>
+                <ol class="list-decimal pl-5 text-gray-700 space-y-2 text-sm">
+                    <li>Perangkat (komputer, printer, dll.) dihubungkan ke perangkat penghubung utama yaitu **switch/hub**. [cite: 189]</li>
+                    <li>**Switch/hub** kemudian bertugas mengatur lalu lintas pertukaran data antar perangkat yang terhubung. [cite: 189]</li>
+                    <li>Jika LAN butuh akses ke jaringan luar, **router** digunakan sebagai gerbang utama menuju internet. [cite: 190]</li>
+                    <li>Data dikirim dalam bentuk paket melewati media kabel atau sinyal Wi-Fi nirkabel sesuai bentuk konfigurasinya. [cite: 190]</li>
+                </ol>
+                <div class="mt-6 bg-purple-50 p-4 rounded-xl text-xs text-purple-950 font-medium">
+                    <strong>Kesimpulan:</strong> LAN efektif digunakan di area rumah, sekolah, maupun kantor untuk berbagi resource secara cepat dan efisien. [cite: 191, 192]
+                </div>
+            </div>
+
+            <div class="mt-8 pt-6 border-t border-gray-100 flex justify-between">
+                <span class="text-sm text-gray-400 self-center">Baca semua bagian sebelum memulai kuis.</span>
+                <a href="quiz.html" class="bg-purple-600 hover:bg-purple-700 text-white font-medium px-4 py-2 rounded-lg text-sm transition-colors">Buka Kuis &rarr;</a>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        function switchTab(tabName) {
+            // Sembunyikan semua konten materi
+            const contents = document.querySelectorAll('.materi-content');
+            contents.forEach(content => content.classList.replace('block', 'hidden'));
+
+            // Tampilkan konten materi yang dipilih
+            document.getElementById('content-' + tabName).classList.replace('hidden', 'block');
+
+            // Reset gaya semua tombol di navigasi sidebar
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('text-purple-700', 'bg-purple-50');
+                btn.classList.add('text-gray-600', 'hover:bg-gray-50');
+            });
+
+            // Beri gaya aktif pada tombol yang sedang diklik
+            const activeBtn = document.getElementById('btn-' + tabName);
+            activeBtn.classList.remove('text-gray-600', 'hover:bg-gray-50');
+            activeBtn.classList.add('text-purple-700', 'bg-purple-50');
+        }
+    </script>
+
+</body>
+</html>

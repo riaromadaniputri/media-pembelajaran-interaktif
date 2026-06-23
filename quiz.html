@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Jaringan LAN</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-800 min-h-screen flex flex-col justify-between font-sans">
+
+    <header class="border-b border-gray-100 py-6">
+        <div class="max-w-2xl mx-auto px-6 flex justify-between items-center">
+            <a href="index.html" class="text-sm font-medium text-gray-500 hover:text-purple-600">&larr; Beranda</a>
+            <span class="text-sm bg-purple-50 text-purple-700 px-3 py-1 rounded-full font-medium">Uji Kemampuan</span>
+        </div>
+    </header>
+
+    <main class="max-w-2xl mx-auto px-6 py-10 flex-grow w-full">
+        <div class="mb-6">
+            <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight">Kuis Evaluasi LAN</h2>
+            <p class="text-gray-500 text-sm mt-1">Pilih jawaban yang paling tepat berdasarkan materi yang telah dipelajari. Terdapat 10 soal dengan 5 pilihan ganda.</p>
+        </div>
+
+        <form id="quiz-form" class="space-y-6">
+            
+            <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+                <p class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">1. Apa kepanjangan dari LAN dalam konteks jaringan komputer?</p>
+                <div class="space-y-2">
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q1" value="A" class="mr-3 text-purple-600 focus:ring-purple-500"> A. Link Access Network
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q1" value="B" class="mr-3 text-purple-600 focus:ring-purple-500"> B. Local Area Network
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q1" value="C" class="mr-3 text-purple-600 focus:ring-purple-500"> C. Logical Area Network
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q1" value="D" class="mr-3 text-purple-600 focus:ring-purple-500"> D. Long Area Network
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q1" value="E" class="mr-3 text-purple-600 focus:ring-purple-500"> E. Light Access Node
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+                <p class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">2. Perangkat jaringan yang berfungsi menghubungkan beberapa komputer pada LAN dan bekerja di Data Link Layer berdasarkan alamat fisik (MAC Address) adalah...</p>
+                <div class="space-y-2">
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q2" value="A" class="mr-3 text-purple-600 focus:ring-purple-500"> A. Hub
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q2" value="B" class="mr-3 text-purple-600 focus:ring-purple-500"> B. Router
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q2" value="C" class="mr-3 text-purple-600 focus:ring-purple-500"> C. Switch
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q2" value="D" class="mr-3 text-purple-600 focus:ring-purple-500"> D. Modem
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q2" value="E" class="mr-3 text-purple-600 focus:ring-purple-500"> E. Repeater
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+                <p class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">3. Teknologi LAN nirkabel yang memanfaatkan gelombang radio untuk menghubungkan perangkat tanpa kabel fisik dikenal dengan sebutan...</p>
+                <div class="space-y-2">
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q3" value="A" class="mr-3 text-purple-600 focus:ring-purple-500"> A. Bluetooth
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q3" value="B" class="mr-3 text-purple-600 focus:ring-purple-500"> B. WLAN (Wi-Fi)
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q3" value="C" class="mr-3 text-purple-600 focus:ring-purple-500"> C. Ethernet
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q3" value="D" class="mr-3 text-purple-600 focus:ring-purple-500"> D. Intranet
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q3" value="E" class="mr-3 text-purple-600 focus:ring-purple-500"> E. Infrared
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+                <p class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">4. Manakah di bawah ini yang merupakan ciri utama dari jaringan area lokal (LAN)?</p>
+                <div class="space-y-2">
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q4" value="A" class="mr-3 text-purple-600 focus:ring-purple-500"> A. Cakupan areanya sangat terbatas (ruangan, gedung, atau kampus)
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q4" value="B" class="mr-3 text-purple-600 focus:ring-purple-500"> B. Menghubungkan komputer antar negara dan benua
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q4" value="C" class="mr-3 text-purple-600 focus:ring-purple-500"> C. Kecepatan transfer data sangat lambat
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q4" value="D" class="mr-3 text-purple-600 focus:ring-purple-500"> D. Pengelolaan jaringannya sangat rumit
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q4" value="E" class="mr-3 text-purple-600 focus:ring-purple-500"> E. Harus menggunakan satelit untuk transmisi data
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+                <p class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">5. Di bawah ini yang merupakan fungsi LAN dalam hal "Resource Sharing" adalah...</p>
+                <div class="space-y-2">
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q5" value="A" class="mr-3 text-purple-600 focus:ring-purple-500"> A. Membeli kuota internet secara bersama-sama
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q5" value="B" class="mr-3 text-purple-600 focus:ring-purple-500"> B. Menghubungkan komputer langsung ke satelit luar angkasa
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q5" value="C" class="mr-3 text-purple-600 focus:ring-purple-500"> C. Penggunaan printer, file, atau aplikasi internal secara bersama-sama
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q5" value="D" class="mr-3 text-purple-600 focus:ring-purple-500"> D. Mengkloning hardware komputer milik orang lain
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q5" value="E" class="mr-3 text-purple-600 focus:ring-purple-500"> E. Membatasi komunikasi antar pengguna komputer
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+                <p class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">6. Berapa perkiraan radius jarak maksimal cakupan untuk jaringan LAN konvensional?</p>
+                <div class="space-y-2">
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q6" value="A" class="mr-3 text-purple-600 focus:ring-purple-500"> A. Hanya 10 meter saja
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q6" value="B" class="mr-3 text-purple-600 focus:ring-purple-500"> B. Beberapa meter hingga sekitar &plusmn;1 km
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q6" value="C" class="mr-3 text-purple-600 focus:ring-purple-500"> C. Di atas 100 km sampai antar pulau
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q6" value="D" class="mr-3 text-purple-600 focus:ring-purple-500"> D. Tidak memiliki batasan jarak sama sekali
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q6" value="E" class="mr-3 text-purple-600 focus:ring-purple-500"> E. Seluas wilayah satu provinsi
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+                <p class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">7. Perangkat yang digunakan sebagai "gerbang utama" (gateway) jika jaringan LAN memerlukan akses ke luar menuju internet adalah...</p>
+                <div class="space-y-2">
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q7" value="A" class="mr-3 text-purple-600 focus:ring-purple-500"> A. Router
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q7" value="B" class="mr-3 text-purple-600 focus:ring-purple-500"> B. Switch
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q7" value="C" class="mr-3 text-purple-600 focus:ring-purple-500"> C. Hub
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q7" value="D" class="mr-3 text-purple-600 focus:ring-purple-500"> D. NIC
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q7" value="E" class="mr-3 text-purple-600 focus:ring-purple-500"> E. Kabel UTP
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+                <p class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">8. Salah satu kelemahan dari jaringan LAN adalah jika server pusat mengalami gangguan (down), maka...</p>
+                <div class="space-y-2">
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q8" value="A" class="mr-3 text-purple-600 focus:ring-purple-500"> A. Kecepatan internet otomatis menjadi dua kali lipat lebih cepat
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q8" value="B" class="mr-3 text-purple-600 focus:ring-purple-500"> B. Seluruh komputer client tetap berjalan normal tanpa kendala data pusat
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q8" value="C" class="mr-3 text-purple-600 focus:ring-purple-500"> C. Seluruh jaringan yang bergantung pada server ikut terganggu
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q8" value="D" class="mr-3 text-purple-600 focus:ring-purple-500"> D. Jaringan LAN langsung otomatis berubah menjadi jaringan WAN
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q8" value="E" class="mr-3 text-purple-600 focus:ring-purple-500"> E. Kabel jaringan akan otomatis terputus secara fisik
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+                <p class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">9. Yang termasuk ke dalam komponen media transmisi fisik berbentuk kabel pada jaringan Wired LAN adalah...</p>
+                <div class="space-y-2">
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q9" value="A" class="mr-3 text-purple-600 focus:ring-purple-500"> A. Gelombang radio gelombang pendek
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q9" value="B" class="mr-3 text-purple-600 focus:ring-purple-500"> B. Sinyal Wi-Fi 2.4 GHz
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q9" value="C" class="mr-3 text-purple-600 focus:ring-purple-500"> C. Kabel Ethernet (seperti UTP atau Fiber Optik)
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q9" value="D" class="mr-3 text-purple-600 focus:ring-purple-500"> D. Sistem Operasi Windows Server
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q9" value="E" class="mr-3 text-purple-600 focus:ring-purple-500"> E. Protokol TCP/IP
+                    </label>
+                </div>
+            </div>
+
+            <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+                <p class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">10. Mengapa manajemen data pada LAN dikatakan efisien dan terpusat?</p>
+                <div class="space-y-2">
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q10" value="A" class="mr-3 text-purple-600 focus:ring-purple-500"> A. Karena setiap komputer menyimpan datanya sendiri tanpa terhubung sama sekali
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q10" value="B" class="mr-3 text-purple-600 focus:ring-purple-500"> B. Karena seluruh data penting dapat disimpan di server pusat untuk diakses klien yang berhak
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q10" value="C" class="mr-3 text-purple-600 focus:ring-purple-500"> C. Karena data otomatis disebarkan ke internet publik secara bebas
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q10" value="D" class="mr-3 text-purple-600 focus:ring-purple-500"> D. Karena LAN tidak membutuhkan perangkat lunak sistem operasi jaringan
+                    </label>
+                    <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
+                        <input type="radio" name="q10" value="E" class="mr-3 text-purple-600 focus:ring-purple-500"> E. Karena kapasitas memori server otomatis tidak terbatas
+                    </label>
+                </div>
+            </div>
+
+            <button type="button" onclick="submitQuiz()" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium p-3 rounded-lg transition-colors">Kirim dan Lihat Skor</button>
+        </form>
+
+        <div id="result-box" class="mt-6 p-5 border border-purple-100 bg-purple-50 rounded-xl hidden text-center">
+            <h3 class="text-xl font-bold text-purple-900">Hasil Evaluasi Anda</h3>
+            <p class="text-2xl font-extrabold text-purple-700 my-2" id="score-text">0 / 100</p>
+            <p class="text-sm text-purple-900" id="feedback-text"></p>
+        </div>
+    </main>
+
+    <footer class="border-t border-gray-100 py-6 text-center text-xs text-gray-400">
+        &copy; 2026 Pendidikan Informatika.
+    </footer>
+
+    <script>
+        function submitQuiz() {
+            const form = document.getElementById('quiz-form');
+            
+            // Kunci jawaban resmi kuis (10 soal)
+            const answers = { 
+                q1: "B", q2: "C", q3: "B", q4: "A", q5: "C",
+                q6: "B", q7: "A", q8: "C", q9: "C", q10: "B" 
+            };
+            
+            let score = 0;
+            let totalQuestions = 10;
+
+            // Memeriksa apakah semua soal sudah diisi
+            for (let i = 1; i <= totalQuestions; i++) {
+                if (!form.elements['q' + i].value) {
+                    alert("Harap jawab semua pertanyaan terlebih dahulu sebelum mengirim! (Soal nomor " + i + " belum diisi)");
+                    return;
+                }
+            }
+
+            // Menghitung jumlah jawaban yang benar
+            for (let i = 1; i <= totalQuestions; i++) {
+                if (form.elements['q' + i].value === answers['q' + i]) {
+                    score++;
+                }
+            }
+
+            // Kalkulasi nilai akhir skala 100
+            let finalScore = Math.round((score / totalQuestions) * 100);
+
+            // Tampilkan kotak hasil kuis
+            const resultBox = document.getElementById('result-box');
+            resultBox.classList.remove('hidden');
+
+            document.getElementById('score-text').innerText = "Skor: " + finalScore + " / 100";
+            
+            if(finalScore === 100) {
+                document.getElementById('feedback-text').innerText = "Luar biasa! Sempurna. Anda telah menguasai seluruh aspek materi Jaringan LAN.";
+            } else if(finalScore >= 70) {
+                document.getElementById('feedback-text').innerText = "Hebat! Anda berhasil lulus dengan pemahaman yang sangat baik.";
+            } else if(finalScore >= 50) {
+                document.getElementById('feedback-text').innerText = "Cukup baik. Bacalah kembali materi pendukung untuk meningkatkan pemahaman Anda.";
+            } else {
+                document.getElementById('feedback-text').innerText = "Nilai Anda masih di bawah standar. Jangan berkecil hati, pelajari lagi materinya dan coba kuis ini kembali!";
+            }
+            
+            // Scroll otomatis ke kotak skor
+            resultBox.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
