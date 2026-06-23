@@ -18,12 +18,12 @@
     <main class="max-w-2xl mx-auto px-6 py-10 flex-grow w-full">
         <div class="mb-6">
             <h2 class="text-3xl font-extrabold text-gray-900 tracking-tight">Kuis Evaluasi LAN</h2>
-            <p class="text-gray-500 text-sm mt-1">Pilih jawaban yang paling tepat berdasarkan materi yang telah dipelajari. Terdapat 10 soal dengan 5 pilihan ganda.</p>
+            <p class="text-gray-500 text-sm mt-1">Pilih jawaban yang paling tepat. Setelah selesai, klik tombol di bawah untuk melihat skor dan koreksi jawaban Anda.</p>
         </div>
 
         <form id="quiz-form" class="space-y-6">
             
-            <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+            <div id="card-q1" class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm transition-all">
                 <p class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">1. Apa kepanjangan dari LAN dalam konteks jaringan komputer?</p>
                 <div class="space-y-2">
                     <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
@@ -42,9 +42,10 @@
                         <input type="radio" name="q1" value="E" class="mr-3 text-purple-600 focus:ring-purple-500"> E. Light Access Node
                     </label>
                 </div>
+                <p id="feedback-q1" class="mt-3 text-xs font-semibold hidden"></p>
             </div>
 
-            <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+            <div id="card-q2" class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm transition-all">
                 <p class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">2. Perangkat jaringan yang berfungsi menghubungkan beberapa komputer pada LAN dan bekerja di Data Link Layer berdasarkan alamat fisik (MAC Address) adalah...</p>
                 <div class="space-y-2">
                     <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
@@ -63,9 +64,10 @@
                         <input type="radio" name="q2" value="E" class="mr-3 text-purple-600 focus:ring-purple-500"> E. Repeater
                     </label>
                 </div>
+                <p id="feedback-q2" class="mt-3 text-xs font-semibold hidden"></p>
             </div>
 
-            <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+            <div id="card-q3" class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm transition-all">
                 <p class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">3. Teknologi LAN nirkabel yang memanfaatkan gelombang radio untuk menghubungkan perangkat tanpa kabel fisik dikenal dengan sebutan...</p>
                 <div class="space-y-2">
                     <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
@@ -84,9 +86,10 @@
                         <input type="radio" name="q3" value="E" class="mr-3 text-purple-600 focus:ring-purple-500"> E. Infrared
                     </label>
                 </div>
+                <p id="feedback-q3" class="mt-3 text-xs font-semibold hidden"></p>
             </div>
 
-            <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+            <div id="card-q4" class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm transition-all">
                 <p class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">4. Manakah di bawah ini yang merupakan ciri utama dari jaringan area lokal (LAN)?</p>
                 <div class="space-y-2">
                     <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
@@ -105,9 +108,10 @@
                         <input type="radio" name="q4" value="E" class="mr-3 text-purple-600 focus:ring-purple-500"> E. Harus menggunakan satelit untuk transmisi data
                     </label>
                 </div>
+                <p id="feedback-q4" class="mt-3 text-xs font-semibold hidden"></p>
             </div>
 
-            <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+            <div id="card-q5" class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm transition-all">
                 <p class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">5. Di bawah ini yang merupakan fungsi LAN dalam hal "Resource Sharing" adalah...</p>
                 <div class="space-y-2">
                     <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
@@ -126,9 +130,10 @@
                         <input type="radio" name="q5" value="E" class="mr-3 text-purple-600 focus:ring-purple-500"> E. Membatasi komunikasi antar pengguna komputer
                     </label>
                 </div>
+                <p id="feedback-q5" class="mt-3 text-xs font-semibold hidden"></p>
             </div>
 
-            <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+            <div id="card-q6" class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm transition-all">
                 <p class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">6. Berapa perkiraan radius jarak maksimal cakupan untuk jaringan LAN konvensional?</p>
                 <div class="space-y-2">
                     <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
@@ -147,9 +152,10 @@
                         <input type="radio" name="q6" value="E" class="mr-3 text-purple-600 focus:ring-purple-500"> E. Seluas wilayah satu provinsi
                     </label>
                 </div>
+                <p id="feedback-q6" class="mt-3 text-xs font-semibold hidden"></p>
             </div>
 
-            <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+            <div id="card-q7" class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm transition-all">
                 <p class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">7. Perangkat yang digunakan sebagai "gerbang utama" (gateway) jika jaringan LAN memerlukan akses ke luar menuju internet adalah...</p>
                 <div class="space-y-2">
                     <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
@@ -168,9 +174,10 @@
                         <input type="radio" name="q7" value="E" class="mr-3 text-purple-600 focus:ring-purple-500"> E. Kabel UTP
                     </label>
                 </div>
+                <p id="feedback-q7" class="mt-3 text-xs font-semibold hidden"></p>
             </div>
 
-            <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+            <div id="card-q8" class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm transition-all">
                 <p class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">8. Salah satu kelemahan dari jaringan LAN adalah jika server pusat mengalami gangguan (down), maka...</p>
                 <div class="space-y-2">
                     <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
@@ -189,9 +196,10 @@
                         <input type="radio" name="q8" value="E" class="mr-3 text-purple-600 focus:ring-purple-500"> E. Kabel jaringan akan otomatis terputus secara fisik
                     </label>
                 </div>
+                <p id="feedback-q8" class="mt-3 text-xs font-semibold hidden"></p>
             </div>
 
-            <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+            <div id="card-q9" class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm transition-all">
                 <p class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">9. Yang termasuk ke dalam komponen media transmisi fisik berbentuk kabel pada jaringan Wired LAN adalah...</p>
                 <div class="space-y-2">
                     <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
@@ -210,9 +218,10 @@
                         <input type="radio" name="q9" value="E" class="mr-3 text-purple-600 focus:ring-purple-500"> E. Protokol TCP/IP
                     </label>
                 </div>
+                <p id="feedback-q9" class="mt-3 text-xs font-semibold hidden"></p>
             </div>
 
-            <div class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm">
+            <div id="card-q10" class="bg-white border border-gray-100 rounded-xl p-5 shadow-sm transition-all">
                 <p class="font-semibold text-gray-900 mb-3 text-sm sm:text-base">10. Mengapa manajemen data pada LAN dikatakan efisien dan terpusat?</p>
                 <div class="space-y-2">
                     <label class="flex items-center p-2.5 rounded-lg border border-gray-100 hover:bg-gray-50 cursor-pointer text-sm">
@@ -231,6 +240,7 @@
                         <input type="radio" name="q10" value="E" class="mr-3 text-purple-600 focus:ring-purple-500"> E. Karena kapasitas memori server otomatis tidak terbatas
                     </label>
                 </div>
+                <p id="feedback-q10" class="mt-3 text-xs font-semibold hidden"></p>
             </div>
 
             <button type="button" onclick="submitQuiz()" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-medium p-3 rounded-lg transition-colors">Kirim dan Lihat Skor</button>
@@ -239,7 +249,8 @@
         <div id="result-box" class="mt-6 p-5 border border-purple-100 bg-purple-50 rounded-xl hidden text-center">
             <h3 class="text-xl font-bold text-purple-900">Hasil Evaluasi Anda</h3>
             <p class="text-2xl font-extrabold text-purple-700 my-2" id="score-text">0 / 100</p>
-            <p class="text-sm text-purple-900" id="feedback-text"></p>
+            <p class="text-sm text-purple-900 mb-1" id="feedback-text"></p>
+            <span class="text-xs text-purple-600 font-medium">(Silakan gulir ke atas untuk melihat detail koreksi setiap soal)</span>
         </div>
     </main>
 
@@ -260,7 +271,7 @@
             let score = 0;
             let totalQuestions = 10;
 
-            // Memeriksa apakah semua soal sudah diisi
+            // 1. Validasi: Memeriksa apakah semua soal sudah diisi
             for (let i = 1; i <= totalQuestions; i++) {
                 if (!form.elements['q' + i].value) {
                     alert("Harap jawab semua pertanyaan terlebih dahulu sebelum mengirim! (Soal nomor " + i + " belum diisi)");
@@ -268,33 +279,48 @@
                 }
             }
 
-            // Menghitung jumlah jawaban yang benar
+            // 2. Evaluasi dan Tampilkan Feedback Per Soal
             for (let i = 1; i <= totalQuestions; i++) {
-                if (form.elements['q' + i].value === answers['q' + i]) {
+                const userAns = form.elements['q' + i].value;
+                const correctAns = answers['q' + i];
+                
+                const card = document.getElementById('card-q' + i);
+                const feedbackText = document.getElementById('feedback-q' + i);
+                
+                // Reset class bawaan card
+                card.classList.remove('bg-white', 'border-gray-100', 'border-green-200', 'bg-green-50/30', 'border-red-200', 'bg-red-50/30');
+                feedbackText.classList.remove('hidden', 'text-green-600', 'text-red-600');
+
+                if (userAns === correctAns) {
                     score++;
+                    // Jika Benar -> Beri warna Hijau pada kotak soal
+                    card.classList.add('border-green-200', 'bg-green-50/30');
+                    feedbackText.classList.add('text-green-600');
+                    feedbackText.innerText = "✓ Benar! Jawaban Anda: " + userAns;
+                } else {
+                    // Jika Salah -> Beri warna Merah pada kotak soal
+                    card.classList.add('border-red-200', 'bg-red-50/30');
+                    feedbackText.classList.add('text-red-600');
+                    feedbackText.innerText = "✗ Salah. Jawaban Anda: " + userAns + " (Kunci Jawaban yang Benar: " + correctAns + ")";
                 }
             }
 
-            // Kalkulasi nilai akhir skala 100
+            // 3. Kalkulasi dan Tampilkan Hasil Skor Akhir
             let finalScore = Math.round((score / totalQuestions) * 100);
-
-            // Tampilkan kotak hasil kuis
             const resultBox = document.getElementById('result-box');
             resultBox.classList.remove('hidden');
 
             document.getElementById('score-text').innerText = "Skor: " + finalScore + " / 100";
             
             if(finalScore === 100) {
-                document.getElementById('feedback-text').innerText = "Luar biasa! Sempurna. Anda telah menguasai seluruh aspek materi Jaringan LAN.";
+                document.getElementById('feedback-text').innerText = "Luar biasa! Sempurna. Anda telah menguasai seluruh materi Jaringan LAN.";
             } else if(finalScore >= 70) {
-                document.getElementById('feedback-text').innerText = "Hebat! Anda berhasil lulus dengan pemahaman yang sangat baik.";
-            } else if(finalScore >= 50) {
-                document.getElementById('feedback-text').innerText = "Cukup baik. Bacalah kembali materi pendukung untuk meningkatkan pemahaman Anda.";
+                document.getElementById('feedback-text').innerText = "Hebat! Anda berhasil lulus dengan pemahaman yang baik.";
             } else {
-                document.getElementById('feedback-text').innerText = "Nilai Anda masih di bawah standar. Jangan berkecil hati, pelajari lagi materinya dan coba kuis ini kembali!";
+                document.getElementById('feedback-text').innerText = "Nilai Anda masih di bawah standar. Silakan pelajari koreksi di atas dan coba lagi!";
             }
             
-            // Scroll otomatis ke kotak skor
+            // Scroll otomatis ke kotak skor di paling bawah
             resultBox.scrollIntoView({ behavior: 'smooth' });
         }
     </script>
